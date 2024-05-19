@@ -105,7 +105,7 @@ resources:
           sudo mkdir /home/labs
           cd /home/labs
           sudo git clone https://github.com/Elkin35/ISIS2503-Microservices-AppDjango2.git
-          cd ISIS2503-Microservices-AppDjango
+          cd ISIS2503-Microservices-AppDjango2
           docker network create kong-net
           docker run -d --name kong --network=kong-net --restart=always \
           -v "$(pwd):/kong/declarative/" -e "KONG_DATABASE=off" \
@@ -229,7 +229,7 @@ resources:
           sudo mkdir /home/labs
           cd /home/labs
           sudo git clone https://github.com/Elkin35/ISIS2503-Microservices-AppDjango2.git
-          cd ISIS2503-Microservices-AppDjango/variables
+          cd ISIS2503-Microservices-AppDjango2/variables
 
 - name: msd-measurements-ms
   type: compute.v1.instance
@@ -262,7 +262,7 @@ resources:
           sudo mkdir /home/labs
           cd /home/labs
           sudo git clone https://github.com/Elkin35/ISIS2503-Microservices-AppDjango2.git
-          cd ISIS2503-Microservices-AppDjango/measurements
+          cd ISIS2503-Microservices-AppDjango2/measurements
           sudo pip3 install -r requirements.txt
           sudo python3 manage.py makemigrations
           sudo python3 manage.py migrate
@@ -299,7 +299,7 @@ resources:
           sudo mkdir /home/labs
           cd /home/labs
           sudo git clone https://github.com/Elkin35/ISIS2503-Microservices-AppDjango2.git
-          cd ISIS2503-Microservices-AppDjango/places
+          cd ISIS2503-Microservices-AppDjango2/places
           sudo pip3 install -r requirements.txt
           sudo python3 manage.py makemigrations
           sudo python3 manage.py migrate
